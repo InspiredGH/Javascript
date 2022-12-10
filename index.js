@@ -1,5 +1,5 @@
 alert("Hello-World");
-typeof(23);
-typeof("Solomon");
-typeof(false);
-typeof(0.5);
+alert(typeof(23));
+alert(typeof("Solomon"));
+alert(typeof(false));
+alert(typeof(0.5));
