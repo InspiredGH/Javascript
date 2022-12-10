@@ -21,6 +21,10 @@
 // alert("You have written " + messages.length + " characters, you have " + (length - messages.length) + " characters left.");
 
 
+// alert(prompt("Hello there, Kindly Enter your Message") . slice(0,180));
+
+
+
 var length = 180;
 var name = "Solomon";
 var messages = prompt("Hello there, " + name + "," + " Kindly Enter your Message");
