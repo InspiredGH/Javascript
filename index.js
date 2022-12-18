@@ -25,15 +25,26 @@
 
 
 
-var length = 180;
-var name = "Solomon";
-var messages = prompt("Hello there, " + name + "," + " Kindly Enter your Message");
-messages.slice(0,181);
+// var length = 180;
+// var name = "Solomon";
+// var messages = prompt("Hello there, " + name + "," + " Kindly Enter your Message");
+// messages.slice(0,181);
 
-if (messages.length <= 180) {
-    alert("You have written " + messages.length + " characters");
-    alert(messages);
-} else {
-    alert("You have exceeded the Max length allowed." + (length - messages.length) + " Message sliced");
-    alert(messages);
-}
+// if (messages.length <= 180) {
+//     alert("You have written " + messages.length + " characters");
+//     alert(messages);
+// } else {
+//     alert("You have exceeded the Max length allowed." + (length - messages.length) + " Message sliced");
+//     alert(messages);
+// }
+
+// var tweet = prompt("Enter tweet");
+// var msg_tweet = tweet.slice(0,20);
+// alert(msg_tweet.toUpperCase());
+
+var name = prompt("What's your name?"); 
+var first = name.slice(0,1);
+var second = name.slice(1,100);
+alert("Hello " + first.toUpperCase() + second.toLowerCase());
+
+
