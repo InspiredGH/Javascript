@@ -42,54 +42,60 @@
 // var msg_tweet = tweet.slice(0,20);
 // alert(msg_tweet.toUpperCase());
 
-var name = prompt("What's your name?"); 
-var first = name.slice(0,1);
-var second = name.slice(1,name.length);
-alert("Hello " + first.toUpperCase() + second.toLowerCase());
+// var name = prompt("What's your name?"); 
+// var first = name.slice(0,1);
+// var second = name.slice(1,name.length);
+// alert("Hello " + first.toUpperCase() + second.toLowerCase());
+
+function titleCase(name) {
+    // prompt to enter your name
+    name = prompt("what's Your Name?")
+
+    // Step 1. Lowercase the string
+    name = name.toLowerCase();
+    // name = "I'm a little tea pot".toLowerCase();
+    // name = "i'm a little tea pot";
+
+    // Step 2. Split the nameing into an array of nameings
+    name = name.split(' ');
+    // name = "i'm a little tea pot".split(' ');
+    // name = ["i'm", "a", "little", "tea", "pot"];
+
+    // Step 3. Create the FOR loop
+    for (var i = 0; i < name.length; i++) {
+        name[i] = name[i].charAt(0).toUpperCase() + name[i].slice(1);
+        /* Here name.length = 5
+          1st iteration: name[0] = name[0].charAt(0).toUpperCase() + name[0].slice(1);
+                         name[0] = "i'm".charAt(0).toUpperCase()  + "i'm".slice(1);
+                         name[0] = "I"                            + "'m";
+                         name[0] = "I'm";
+          2nd iteration: name[1] = name[1].charAt(0).toUpperCase() + name[1].slice(1);
+                         name[1] = "a".charAt(0).toUpperCase()    + "a".slice(1);
+                         name[1] = "A"                            + "";
+                         name[1] = "A";
+          3rd iteration: name[2] = name[2].charAt(0).toUpperCase()   + name[2].slice(1);
+                         name[2] = "little".charAt(0).toUpperCase() + "little".slice(1);
+                         name[2] = "L"                              + "ittle";
+                         name[2] = "Little";
+          4th iteration: name[3] = name[3].charAt(0).toUpperCase() + name[3].slice(1);
+                         name[3] = "tea".charAt(0).toUpperCase()  + "tea".slice(1);
+                         name[3] = "T"                            + "ea";
+                         name[3] = "Tea";
+          5th iteration: name[4] = name[4].charAt(0).toUpperCase() + name[4].slice(1);
+                         name[4] = "pot".charAt(0).toUpperCase() + "pot".slice(1);
+                         name[4] = "P"                           + "ot";
+                         name[4] = "Pot";                                                         
+          End of the FOR Loop*/
+    }
+
+    // Step 4. Return the output
+    return name.join(' '); // ["I'm", "A", "Little", "Tea", "Pot"].join(' ') => "I'm A Little Tea Pot"
+}
 
 
-// function titleCase(str) {
-//   // Step 1. Lowercase the string
-//   str = str.toLowerCase();
-//   // str = "I'm a little tea pot".toLowerCase();
-//   // str = "i'm a little tea pot";
-  
-//   // Step 2. Split the string into an array of strings
-//   str = str.split(' ');
-//   // str = "i'm a little tea pot".split(' ');
-//   // str = ["i'm", "a", "little", "tea", "pot"];
-  
-//   // Step 3. Create the FOR loop
-//   for (var i = 0; i < str.length; i++) {
-//     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
-//   /* Here str.length = 5
-//     1st iteration: str[0] = str[0].charAt(0).toUpperCase() + str[0].slice(1);
-//                    str[0] = "i'm".charAt(0).toUpperCase()  + "i'm".slice(1);
-//                    str[0] = "I"                            + "'m";
-//                    str[0] = "I'm";
-//     2nd iteration: str[1] = str[1].charAt(0).toUpperCase() + str[1].slice(1);
-//                    str[1] = "a".charAt(0).toUpperCase()    + "a".slice(1);
-//                    str[1] = "A"                            + "";
-//                    str[1] = "A";
-//     3rd iteration: str[2] = str[2].charAt(0).toUpperCase()   + str[2].slice(1);
-//                    str[2] = "little".charAt(0).toUpperCase() + "little".slice(1);
-//                    str[2] = "L"                              + "ittle";
-//                    str[2] = "Little";
-//     4th iteration: str[3] = str[3].charAt(0).toUpperCase() + str[3].slice(1);
-//                    str[3] = "tea".charAt(0).toUpperCase()  + "tea".slice(1);
-//                    str[3] = "T"                            + "ea";
-//                    str[3] = "Tea";
-//     5th iteration: str[4] = str[4].charAt(0).toUpperCase() + str[4].slice(1);
-//                    str[4] = "pot".charAt(0).toUpperCase() + "pot".slice(1);
-//                    str[4] = "P"                           + "ot";
-//                    str[4] = "Pot";                                                         
-//     End of the FOR Loop*/
-//   }
-  
-//   // Step 4. Return the output
-//   return str.join(' '); // ["I'm", "A", "Little", "Tea", "Pot"].join(' ') => "I'm A Little Tea Pot"
-// }
+alert(titleCase(name));
 
-// titleCase("I'm a little tea pot");
+
+
 
 
