@@ -97,18 +97,34 @@
 
 
 
-function math() {
-    var a= prompt("Enter 1st Numeber");
-    var b= prompt("Enter 2nd Numeber");
+// function math() {
+//     var a= prompt("Enter 1st Numeber");
+//     var b= prompt("Enter 2nd Numeber");
 
-    var c = a+b;
-    var d = a-b;
-    var e = a*b;
-    var f = a/b;
+//     var c = a+b;
+//     var d = a-b;
+//     var e = a*b;
+//     var f = a/b;
     
-    return(c + " " + d + " " + e + " " + f);
+//     return(c + " " + d + " " + e + " " + f);
    
-}
+// }
 
-alert(math());
+// alert(math());
 
+
+
+function getMilk(money) { 
+ 
+    var bottles = money / 2;
+    var balance = Math.floor(bottles) * 2;
+    var cost = money % 2;  
+  
+      if (bottles == Math.floor(bottles)) {
+          alert("the total number of bottles that can be purchased with GHS" + money + " is " + bottles + " bottles");
+      } else {
+            alert("the total number of bottles that can be purchased with GHS" + money + " is " + Math.floor(bottles) + " bottles for GHS" + balance + " and the balance is GHS" + cost);
+      }
+  }
+  
+  getMilk(prompt("enter amount"));
