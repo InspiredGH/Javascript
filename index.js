@@ -136,7 +136,7 @@ function lifeInWeeks(age) {
         
         //Write your code here.
     
-        age = (prompt("Enter your age"));
+        // age = prompt("Enter your age");
         var year = 90;
     
         var days = 365;
@@ -147,8 +147,9 @@ function lifeInWeeks(age) {
         var y = (year *  weeks) - (weeks * age);    
         var z = (year * months) - (months * age); 
     
-        console.log("You have " + x + " days, " + y + " weeks, and " + z + " months left.");
+        alert("You have " + x + " days, " + y + " weeks, and " + z + " months left.");
         
         
     /*************Don't change the code below**********/
     }
+lifeInWeeks(prompt("Enter your age"));
