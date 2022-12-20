@@ -114,17 +114,41 @@
 
 
 
-function getMilk(money) { 
+// function getMilk(money) { 
  
-    var bottles = money / 2;
-    var balance = Math.floor(bottles) * 2;
-    var cost = money % 2;  
+//     var bottles = money / 2;
+//     var balance = Math.floor(bottles) * 2;
+//     var cost = money % 2;  
   
-      if (bottles == Math.floor(bottles)) {
-          alert("the total number of bottles that can be purchased with GHS" + money + " is " + bottles + " bottles");
-      } else {
-            alert("the total number of bottles that can be purchased with GHS" + money + " is " + Math.floor(bottles) + " bottles for GHS" + balance + " and the balance is GHS" + cost);
-      }
-  }
+//       if (bottles == Math.floor(bottles)) {
+//           alert("the total number of bottles that can be purchased with GHS" + money + " is " + bottles + " bottles");
+//       } else {
+//             alert("the total number of bottles that can be purchased with GHS" + money + " is " + Math.floor(bottles) + " bottles for GHS" + balance + " and the balance is GHS" + cost);
+//       }
+//   }
   
-  getMilk(prompt("enter amount"));
+//   getMilk(prompt("enter amount"));
+
+
+function lifeInWeeks(age) {
+    
+    /************Don't change the code above************/    
+        
+        //Write your code here.
+    
+        age = (prompt("Enter your age"));
+        var year = 90;
+    
+        var days = 365;
+        var weeks = 52;
+        var months = 12;
+        
+        var x = (year * days) - (days * age);    
+        var y = (year *  weeks) - (weeks * age);    
+        var z = (year * months) - (months * age); 
+    
+        console.log("You have " + x + " days, " + y + " weeks, and " + z + " months left.");
+        
+        
+    /*************Don't change the code below**********/
+    }
