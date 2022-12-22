@@ -38,15 +38,24 @@
 //     alert(messages);
 // }
 
+
+
+// function to output words to Upper
 // var tweet = prompt("Enter tweet");
 // var msg_tweet = tweet.slice(0,20);
 // alert(msg_tweet.toUpperCase());
 
+
+
+// function to output just the first letter of a word to Upper
 // var name = prompt("What's your name?"); 
 // var first = name.slice(0,1);
 // var second = name.slice(1,name.length);
 // alert("Hello " + first.toUpperCase() + second.toLowerCase());
 
+
+
+// function to make a sentence set to sentence case. that is capitalizing each word
 // function titleCase(name) {
 //     // prompt to enter your name
 //     name = prompt("what's Your Name?")
@@ -96,7 +105,7 @@
 // alert(titleCase(name));
 
 
-
+// math functions
 // function math() {
 //     var a= prompt("Enter 1st Numeber");
 //     var b= prompt("Enter 2nd Numeber");
@@ -113,7 +122,7 @@
 // alert(math());
 
 
-
+// functions with prompt
 // function getMilk(money) { 
  
 //     var bottles = money / 2;
@@ -130,6 +139,7 @@
 //   getMilk(prompt("enter amount"));
 
 
+// life in weeks challenge version 1
 // function lifeInWeeks(age) {
     
 //     /************Don't change the code above************/    
@@ -155,7 +165,7 @@
 // lifeInWeeks(prompt("Enter your age"));
 
 
-
+// life in weeks challenge version 2
 // function lifeInWeeks(age) {
     
 // /************Don't change the code above************/    
@@ -179,18 +189,34 @@
 
 
 
-function bmiCalculator(weight,height) {
+// BMI challenge
+// function bmiCalculator(weight,height) {
 
-    weight = prompt("Enter your weight");
-    height = prompt("Enter your height");
+//     weight = prompt("Enter your weight");
+//     height = prompt("Enter your height");
 
-    var bmi = Math.round(weight/Math.pow(height, 2));
+//     var bmi = Math.round(weight/Math.pow(height, 2));
     
-    return(bmi);
+//     return(bmi);
     
-}
+// }
 
-var bmi = bmiCalculator();
-alert("Your BMI is " + bmi);
+// var bmi = bmiCalculator();
+// alert("Your BMI is " + bmi);
 
 
+// Random number Generator Challenge
+ // declaring the variable n as the random number generator
+ var n = Math.random(); 
+
+ // increasing the limit of the random generated numbers to 6 just like the dice. The default is always less than 1
+ n = n * 6;
+ 
+ // adding plus 1 to set the range from 0 - 5 to 1 - 6.  default is 0 so times 6 means 0 to 5 so adding plus 1 makes it start from 1
+ n = n + 1;
+ 
+ // Displaying just the whole number and not the 16 decimal places
+ n = Math.floor(n);
+ 
+ // Logging the output
+ alert(n);
