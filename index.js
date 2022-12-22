@@ -156,23 +156,41 @@
 
 
 
-function lifeInWeeks(age) {
+// function lifeInWeeks(age) {
     
-/************Don't change the code above************/    
+// /************Don't change the code above************/    
     
-    //Write your code here.
+//     //Write your code here.
 
-    var year = 90;
-    var yearRemaining = year - age;
+//     var year = 90;
+//     var yearRemaining = year - age;
 
-    var days = yearRemaining * 365;
-    var weeks = yearRemaining * 52;
-    var months = yearRemaining * 12;
+//     var days = yearRemaining * 365;
+//     var weeks = yearRemaining * 52;
+//     var months = yearRemaining * 12;
     
-    alert("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
+//     alert("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
     
     
-/*************Don't change the code below**********/
+// /*************Don't change the code below**********/
+// }
+
+// lifeInWeeks(prompt("Enter your age"));
+
+
+
+function bmiCalculator(weight,height) {
+
+    weight = prompt("Enter your weight");
+    height = prompt("Enter your height");
+
+    var bmi = Math.round(weight/Math.pow(height, 2));
+    
+    return(bmi);
+    
 }
 
-lifeInWeeks(prompt("Enter your age"));
+var bmi = bmiCalculator();
+alert("Your BMI is " + bmi);
+
+
