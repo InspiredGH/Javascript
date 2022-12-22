@@ -130,26 +130,49 @@
 //   getMilk(prompt("enter amount"));
 
 
+// function lifeInWeeks(age) {
+    
+//     /************Don't change the code above************/    
+        
+//         //Write your code here.
+    
+//         // age = prompt("Enter your age");
+//         var year = 90;
+    
+//         var days = 365;
+//         var weeks = 52;
+//         var months = 12;
+        
+//         var x = (year * days) - (days * age);    
+//         var y = (year *  weeks) - (weeks * age);    
+//         var z = (year * months) - (months * age); 
+    
+//         alert("You have " + x + " days, " + y + " weeks, and " + z + " months left.");
+        
+        
+//     /*************Don't change the code below**********/
+//     }
+// lifeInWeeks(prompt("Enter your age"));
+
+
+
 function lifeInWeeks(age) {
     
-    /************Don't change the code above************/    
-        
-        //Write your code here.
+/************Don't change the code above************/    
     
-        // age = prompt("Enter your age");
-        var year = 90;
+    //Write your code here.
+
+    var year = 90;
+    var yearRemaining = year - age;
+
+    var days = yearRemaining * 365;
+    var weeks = yearRemaining * 52;
+    var months = yearRemaining * 12;
     
-        var days = 365;
-        var weeks = 52;
-        var months = 12;
-        
-        var x = (year * days) - (days * age);    
-        var y = (year *  weeks) - (weeks * age);    
-        var z = (year * months) - (months * age); 
+    alert("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
     
-        alert("You have " + x + " days, " + y + " weeks, and " + z + " months left.");
-        
-        
-    /*************Don't change the code below**********/
-    }
+    
+/*************Don't change the code below**********/
+}
+
 lifeInWeeks(prompt("Enter your age"));
