@@ -314,42 +314,45 @@
 // }
 
 
+
+
+// FizzBuzz Challenge
 // var output = [];
 
-// function fizzbuzz() {
+// function fizzBuzz() {
     
-//     for (let i = 0; i < 100; i++) {
-//        output.push(i);   
-//      }
-//      console.log(output);
+// for (var count = 1; count < 100; count++) {
+
+//     if ((count % 3 === 0) && (count % 5 === 0)) {
+//                output.push("FizzBuzz"); 
+//            }
+    
+//         else if (count % 3 === 0){
+//            output.push("Fizz");
+//                }
+        
+//            else if (count % 5 === 0){
+//             output.push("Buzz");  
+//            }
+           
+//             else{
+//                output.push(count);
+//            }
+//     alert(output);
+//     }
 // }
 
-// fizzbuzz();
+// fizzBuzz();
 
 
-var output = [];
+// who is paying challenge
+var namesList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 
-function fizzBuzz() {
+function whosPaying(names) {
     
-for (var count = 1; count < 100; count++) {
+names = Math.floor(Math.random() * namesList.length);
 
-    if ((count % 3 === 0) && (count % 5 === 0)) {
-               output.push("FizzBuzz"); 
-           }
-    
-        else if (count % 3 === 0){
-           output.push("Fizz");
-               }
-        
-           else if (count % 5 === 0){
-            output.push("Buzz");  
-           }
-           
-            else{
-               output.push(count);
-           }
-    alert(output);
-    }
+alert(namesList[names] + " is going to buy lunch today!")
 }
 
-fizzBuzz();
+whosPaying();
