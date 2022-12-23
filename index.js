@@ -205,18 +205,96 @@
 // alert("Your BMI is " + bmi);
 
 
+// function bmiCalculator (weight, height) {
+    
+//     var bmi = (weight/Math.pow(height, 2));
+         
+//      if (bmi < 18.5){
+//          console.log("Your BMI is " + Math.round(bmi) + ", so you are underweight.");
+//      } else if (bmi > 18.5 && bmi <= 24.9){
+//           console.log("Your BMI is " + Math.round(bmi) + ", so you have a normal weight.");
+//      } else if (bmi > 24.9){
+//           console.log("Your BMI is " + Math.round(bmi) + ",  so you are overweight.");
+//      }
+     
+//      // return Math.round(bmi);
+//  }
+ 
+//  var bmi = bmiCalculator(60, 2);
+ 
+
+
 // Random number Generator Challenge
  // declaring the variable n as the random number generator
- var n = Math.random(); 
+//  var n = Math.random(); 
 
- // increasing the limit of the random generated numbers to 6 just like the dice. The default is always less than 1
- n = n * 6;
+//  // increasing the limit of the random generated numbers to 6 just like the dice. The default is always less than 1
+//  n = n * 6;
  
- // adding plus 1 to set the range from 0 - 5 to 1 - 6.  default is 0 so times 6 means 0 to 5 so adding plus 1 makes it start from 1
- n = n + 1;
+//  // adding plus 1 to set the range from 0 - 5 to 1 - 6.  default is 0 so times 6 means 0 to 5 so adding plus 1 makes it start from 1
+//  n = n + 1;
  
- // Displaying just the whole number and not the 16 decimal places
- n = Math.floor(n);
+//  // Displaying just the whole number and not the 16 decimal places
+//  n = Math.floor(n);
  
- // Logging the output
- alert(n);
+//  // Logging the output
+//  alert(n);
+
+
+
+// love calculator
+// var his = prompt("Enter His Name");
+// var her = prompt("Enter Her Name");
+
+// // declaring the variable n as the random number generator
+// var n = Math.random(); 
+
+// // increasing the limit of the random generated numbers to 6 just like the dice. The default is always less than 1
+// n = n * 100;
+
+// // adding plus 1 to set the range from 0 - 5 to 1 - 6.  default is 0 so times 6 means 0 to 5 so adding plus 1 makes it start from 1
+// n = n + 1;
+
+// // Displaying just the whole number and not the 16 decimal places
+// n = Math.floor(n);
+
+// // Logging the output
+
+// if (n <= 40) {
+//     alert(his + " and " + her + " love score is \n" + n + "% \n NOT RECOMMENDED");
+// } else if (n > 40 && n < 70) {
+//     alert(his + " and " + her + " love score is \n" + n + "% \n GOOD"); 
+// } else{
+//      alert(his + " and " + her + " love score is \n" + n + "% \n EXCELLENT"); 
+// }
+
+
+
+// leap year calculator
+function isLeap(year) {
+    
+        if (((year % 4) !== 0)){
+         console.log("Not leap year.");
+    }
+    
+         else if (((year % 4) === 0) && ((year % 100) !== 0)){
+         console.log("leap year.");
+    }
+    
+        else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) !== 0)){
+        console.log("Not leap year.");
+    }
+    
+    
+        else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) === 0)){
+         console.log("leap year.");
+    }
+    
+    else{
+        console.log("Not leap year.");
+    }
+    
+        
+    }
+    
+     isLeap(prompt("Enter year"));
