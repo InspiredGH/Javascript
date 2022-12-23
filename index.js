@@ -270,31 +270,86 @@
 
 
 
-// leap year calculator
-function isLeap(year) {
+// // leap year calculator
+// function isLeap(year) {
     
-        if (((year % 4) !== 0)){
-         console.log("Not leap year.");
-    }
+//         if (((year % 4) !== 0)){
+//          console.log("Not leap year.");
+//     }
     
-         else if (((year % 4) === 0) && ((year % 100) !== 0)){
-         console.log("leap year.");
-    }
+//          else if (((year % 4) === 0) && ((year % 100) !== 0)){
+//          console.log("leap year.");
+//     }
     
-        else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) !== 0)){
-        console.log("Not leap year.");
-    }
+//         else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) !== 0)){
+//         console.log("Not leap year.");
+//     }
     
     
-        else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) === 0)){
-         console.log("leap year.");
-    }
+//         else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) === 0)){
+//          console.log("leap year.");
+//     }
     
-    else{
-        console.log("Not leap year.");
-    }
+//     else{
+//         console.log("Not leap year.");
+//     }
     
         
-    }
+//     }
     
-     isLeap(prompt("Enter year"));
+//      isLeap(prompt("Enter year"));
+
+
+// var guestNames = ['Angela','Jack','Anita','Maud','Solomon'];
+// var guest = prompt("What's your name?");
+//     var first = guest.slice(0,1);
+//     var second = guest.slice(1,guest.length);
+
+// if (guestNames.includes(guest)){
+//     console.log("Welcome " + first.toUpperCase() + second.toLowerCase());
+// }
+
+// else{
+//      console.log("You are not on the list " + first.toUpperCase() + second.toLowerCase());
+// }
+
+
+// var output = [];
+
+// function fizzbuzz() {
+    
+//     for (let i = 0; i < 100; i++) {
+//        output.push(i);   
+//      }
+//      console.log(output);
+// }
+
+// fizzbuzz();
+
+
+var output = [];
+
+function fizzBuzz() {
+    
+for (var count = 1; count < 100; count++) {
+
+    if ((count % 3 === 0) && (count % 5 === 0)) {
+               output.push("FizzBuzz"); 
+           }
+    
+        else if (count % 3 === 0){
+           output.push("Fizz");
+               }
+        
+           else if (count % 5 === 0){
+            output.push("Buzz");  
+           }
+           
+            else{
+               output.push(count);
+           }
+    console.log(output);
+    }
+}
+
+fizzBuzz();
