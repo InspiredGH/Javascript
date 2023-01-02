@@ -346,13 +346,45 @@
 
 
 // who is paying challenge
-var namesList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+// var namesList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 
-function whosPaying(names) {
+// function whosPaying(names) {
     
-names = Math.floor(Math.random() * namesList.length);
+// names = Math.floor(Math.random() * namesList.length);
 
-alert(namesList[names] + " is going to buy lunch today!")
-}
+// alert(namesList[names] + " is going to buy lunch today!")
+// }
 
-whosPaying();
+// whosPaying();
+
+
+
+
+
+    
+var bottles = 100;
+
+
+while (bottles >= 0) {
+    if(bottles == 0){
+        alert("no more bottles of beer on the wall, go to the store and buy some more");
+    }
+
+    else if(bottles == 1){
+        alert(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer, take 1 down, pass it around no more bottle of beer on the wall");
+    }
+
+    else if(bottles == 2){
+        alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottle of beer on the wall"));
+    }
+
+    else{
+        alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottles of beer on the wall"));
+    }
+
+bottles--;
+
+ }
+beer();
+
+
