@@ -210,11 +210,11 @@
 //     var bmi = (weight/Math.pow(height, 2));
          
 //      if (bmi < 18.5){
-//          console.log("Your BMI is " + Math.round(bmi) + ", so you are underweight.");
+//          alert("Your BMI is " + Math.round(bmi) + ", so you are underweight.");
 //      } else if (bmi > 18.5 && bmi <= 24.9){
-//           console.log("Your BMI is " + Math.round(bmi) + ", so you have a normal weight.");
+//           alert("Your BMI is " + Math.round(bmi) + ", so you have a normal weight.");
 //      } else if (bmi > 24.9){
-//           console.log("Your BMI is " + Math.round(bmi) + ",  so you are overweight.");
+//           alert("Your BMI is " + Math.round(bmi) + ",  so you are overweight.");
 //      }
      
 //      // return Math.round(bmi);
@@ -274,24 +274,24 @@
 // function isLeap(year) {
     
 //         if (((year % 4) !== 0)){
-//          console.log("Not leap year.");
+//          alert("Not leap year.");
 //     }
     
 //          else if (((year % 4) === 0) && ((year % 100) !== 0)){
-//          console.log("leap year.");
+//          alert("leap year.");
 //     }
     
 //         else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) !== 0)){
-//         console.log("Not leap year.");
+//         alert("Not leap year.");
 //     }
     
     
 //         else if (((year % 4) === 0) && ((year % 100) === 0) && ((year % 400) === 0)){
-//          console.log("leap year.");
+//          alert("leap year.");
 //     }
     
 //     else{
-//         console.log("Not leap year.");
+//         alert("Not leap year.");
 //     }
     
         
@@ -306,11 +306,11 @@
 //     var second = guest.slice(1,guest.length);
 
 // if (guestNames.includes(guest)){
-//     console.log("Welcome " + first.toUpperCase() + second.toLowerCase());
+//     alert("Welcome " + first.toUpperCase() + second.toLowerCase());
 // }
 
 // else{
-//      console.log("You are not on the list " + first.toUpperCase() + second.toLowerCase());
+//      alert("You are not on the list " + first.toUpperCase() + second.toLowerCase());
 // }
 
 
@@ -361,30 +361,58 @@
 
 
 
+//   bottle of beer on the wall  
+// var bottles = 100;
+
+
+// while (bottles >= 0) {
+//     if(bottles == 0){
+//         alert("no more bottles of beer on the wall, go to the store and buy some more");
+//     }
+
+//     else if(bottles == 1){
+//         alert(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer, take 1 down, pass it around no more bottle of beer on the wall");
+//     }
+
+//     else if(bottles == 2){
+//         alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottle of beer on the wall"));
+//     }
+
+//     else{
+//         alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottles of beer on the wall"));
+//     }
+
+// bottles--;
+
+//  }
+// beer();
+
+
+function beer() {
+ 
+    var  bottles = 100;
+     
+    while (bottles >= 0) {
+        if(bottles == 0){
+            alert("no more bottles of beer on the wall, go to the store and buy some more");
+        }
     
-var bottles = 100;
-
-
-while (bottles >= 0) {
-    if(bottles == 0){
-        alert("no more bottles of beer on the wall, go to the store and buy some more");
-    }
-
-    else if(bottles == 1){
-        alert(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer, take 1 down, pass it around no more bottle of beer on the wall");
-    }
-
-    else if(bottles == 2){
-        alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottle of beer on the wall"));
-    }
-
-    else{
-        alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottles of beer on the wall"));
-    }
-
-bottles--;
-
- }
-beer();
-
-
+        else if(bottles == 1){
+            alert(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer, take 1 down, pass it around no more bottle of beer on the wall");
+        }
+    
+        else if(bottles == 2){
+            alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottle of beer on the wall"));
+        }
+    
+        else{
+            alert((bottles + " bottles of beer on the wall, " + bottles + " bottles of beer, take 1 down, pass it around " + (bottles - 1) + " bottles of beer on the wall"));
+        }
+    
+    bottles--;
+     }
+    
+    };
+    
+    beer();
+    
